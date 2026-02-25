@@ -75,7 +75,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="glass p-8 md:p-12 rounded-[2.5rem] border-brand/10 space-y-8 shadow-2xl shadow-brand/5 relative overflow-hidden">
+          <form onSubmit={handleSubmit} className="glass p-6 sm:p-8 md:p-12 rounded-[2rem] sm:rounded-[2.5rem] border-brand/10 space-y-8 shadow-2xl shadow-brand/5 relative overflow-hidden w-full">
             <div className="absolute top-0 right-0 w-32 h-32 bg-brand/5 blur-[50px] rounded-full" />
             
             <div className="space-y-2">
