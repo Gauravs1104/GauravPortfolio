@@ -110,7 +110,7 @@ export default function Hero() {
           >
             <div className="w-48 h-60 sm:w-64 sm:h-80 md:w-80 md:h-[420px] glass rounded-[30px] sm:rounded-[50px] border-slate-700/50 rotate-6 absolute inset-0 -z-10" />
             <img 
-              src="/profile.jpg" 
+              src="/profile.jpeg" 
               alt="Gaurav Raj" 
               className="w-48 h-60 sm:w-64 sm:h-80 md:w-80 md:h-[420px] object-cover rounded-[30px] sm:rounded-[50px] border-2 border-slate-800/50 shadow-2xl relative z-10"
             />

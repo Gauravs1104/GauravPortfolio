@@ -49,7 +49,7 @@ export default function About() {
             <div className="relative group max-w-[300px] mx-auto lg:mx-0 mb-8">
               <div className="relative z-10 rounded-3xl overflow-hidden border-2 border-brand/20 group-hover:border-brand transition-all duration-300">
                 <img 
-                  src="/profile.jpg" 
+                  src="/profile.jpeg" 
                   alt="Gaurav Raj" 
                   className="w-full aspect-square object-cover transition-all duration-500 lg:grayscale lg:group-hover:grayscale-0"
                 />
