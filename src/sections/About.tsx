@@ -51,7 +51,7 @@ export default function About() {
                 <img 
                   src="/profile.jpg" 
                   alt="Gaurav Raj" 
-                  className="w-full aspect-square object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  className="w-full aspect-square object-cover transition-all duration-500 lg:grayscale lg:group-hover:grayscale-0"
                 />
                 <div className="absolute inset-0 bg-brand/10 group-hover:bg-transparent transition-all duration-300" />
               </div>
