@@ -44,38 +44,38 @@ export default function Contact() {
           Get In Touch
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          <div className="space-y-8">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-16 items-start">
+          <div className="space-y-6 sm:space-y-8">
             <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
               Let's Build <br /> <span className="text-brand">Something</span> Great.
             </h2>
-            <p className="text-slate-400 text-lg leading-relaxed max-w-md font-medium">
+            <p className="text-slate-400 text-sm sm:text-lg leading-relaxed max-w-md font-medium">
               I'm currently available for freelance projects and technical collaborations. Whether you have a question or just want to say hi, I'll get back to you!
             </p>
             
             <div className="space-y-4 pt-4">
-              <div className="flex items-center gap-6 p-6 glass rounded-2xl border-brand/10 hover:border-brand/30 transition-all group cursor-pointer">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 p-6 glass rounded-2xl border-brand/10 hover:border-brand/30 transition-all group cursor-pointer">
                 <div className="p-4 bg-brand/10 rounded-xl text-brand group-hover:bg-brand group-hover:text-bg transition-all">
                   <Mail size={24} />
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.2em] font-black text-slate-500">Email Me</p>
-                  <p className="text-white font-bold text-lg">gauravraj11.11.2004@gmail.com</p>
+                  <p className="text-[8px] sm:text-[10px] uppercase tracking-[0.2em] font-black text-slate-500">Email Me</p>
+                  <p className="text-white font-bold text-sm sm:text-lg break-all sm:break-normal">gauravraj11.11.2004@gmail.com</p>
                 </div>
               </div>
-              <div className="flex items-center gap-6 p-6 glass rounded-2xl border-brand/10 hover:border-brand/30 transition-all group cursor-pointer">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 p-6 glass rounded-2xl border-brand/10 hover:border-brand/30 transition-all group cursor-pointer">
                 <div className="p-4 bg-blue-500/10 rounded-xl text-blue-400 group-hover:bg-blue-400 group-hover:text-bg transition-all">
                   <MessageSquare size={24} />
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.2em] font-black text-slate-500">Socials</p>
-                  <p className="text-white font-bold text-lg">LinkedIn / GitHub</p>
+                  <p className="text-[8px] sm:text-[10px] uppercase tracking-[0.2em] font-black text-slate-500">Socials</p>
+                  <p className="text-white font-bold text-sm sm:text-lg">LinkedIn / GitHub / Mail</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="glass p-6 sm:p-8 md:p-12 rounded-[2rem] sm:rounded-[2.5rem] border-brand/10 space-y-8 shadow-2xl shadow-brand/5 relative overflow-hidden w-full">
+          <form onSubmit={handleSubmit} className="glass p-5 sm:p-8 md:p-12 rounded-[1.5rem] sm:rounded-[2.5rem] border-brand/10 space-y-6 sm:space-y-8 shadow-2xl shadow-brand/5 relative overflow-hidden w-full max-w-full">
             <div className="absolute top-0 right-0 w-32 h-32 bg-brand/5 blur-[50px] rounded-full" />
             
             <div className="space-y-2">
