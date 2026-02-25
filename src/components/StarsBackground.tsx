@@ -1,12 +1,12 @@
 import { useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { Points, PointMaterial } from '@react-three/drei'
-import * as random from 'maath/random/dist/maath-random.esm'
+// Use the standard import path for maath
+import * as random from 'maath/random'
 
 export function StarsBackground(props: any) {
   const ref: any = useRef(null)
   
-  // Create a sphere of 5000 points
   const [sphere] = useState(() => {
     const data = new Float32Array(5000 * 3);
     return random.inSphere(data, { radius: 1.5 }) as Float32Array;

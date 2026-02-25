@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { Download, Github, Linkedin, ArrowRight, Terminal } from 'lucide-react'
+import { Github, Linkedin, ArrowRight, Terminal } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
 const roles = [
