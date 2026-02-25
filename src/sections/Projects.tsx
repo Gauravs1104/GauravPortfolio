@@ -65,7 +65,7 @@ export default function Projects() {
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 opacity-60 group-hover:opacity-100"
+                  className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 opacity-60 group-hover:opacity-100"
                 />
                 <div className="absolute top-4 left-4 p-3 glass rounded-2xl shadow-2xl">
                   {project.icon}

@@ -48,8 +48,8 @@ export default function Hero() {
               Gaurav <br className="hidden sm:block" />Raj<span className="text-brand">.</span>
             </h1>
             
-            {/* Typewriter with dynamic sizing */}
-            <div className="h-[40px] sm:h-[80px] md:h-[100px] flex items-center mb-8 sm:mb-10">
+            {/* Typewriter with dynamic sizing - adjusted for mobile wrapping */}
+            <div className="min-h-[60px] sm:h-[80px] md:h-[100px] flex items-center mb-8 sm:mb-10">
               <AnimatePresence mode="wait">
                 <motion.div 
                   key={index}
@@ -60,7 +60,7 @@ export default function Hero() {
                   className="flex items-center gap-3 sm:gap-6"
                 >
                   <Terminal className="text-brand hidden sm:block" size={32} />
-                  <h2 className="text-xl sm:text-4xl md:text-6xl font-black text-slate-400 uppercase tracking-tighter">
+                  <h2 className="text-2xl sm:text-4xl md:text-6xl font-black text-slate-400 uppercase tracking-tighter leading-none">
                     {roles[index]}
                   </h2>
                 </motion.div>
