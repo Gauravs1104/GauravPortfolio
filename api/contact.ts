@@ -3,14 +3,17 @@ import mongoose from 'mongoose';
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
+// Renamed Schema and added 'source' to identify this specific website
 const contactSchema = new mongoose.Schema({
   name: String,
   email: String,
   message: String,
+  source: { type: String, default: 'Gaurav-3D-Portfolio' },
   createdAt: { type: Date, default: Date.now },
 });
 
-const Contact = mongoose.models.Contact || mongoose.model('Contact', contactSchema);
+// Changed model name to 'PortfolioContact' so it creates a new collection in MongoDB
+const PortfolioContact = mongoose.models.PortfolioContact || mongoose.model('PortfolioContact', contactSchema);
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
@@ -32,7 +35,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ message: 'Missing fields' });
     }
 
-    const newContact = new Contact({ name, email, message });
+    const newContact = new PortfolioContact({ name, email, message });
     await newContact.save();
 
     return res.status(200).json({ message: 'Message sent successfully!' });
