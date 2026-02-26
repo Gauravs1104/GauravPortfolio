@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-center text-slate-500 font-mono text-xs border-t border-slate-900/50 pt-8">
-          <p className="text-center">© 2025 Gaurav Raj. All Rights Reserved.</p>
+          <p className="text-center">© 2026 Gaurav Raj. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
